@@ -1,0 +1,29 @@
+.servicesScreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+}
+.servicesScreenContent{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    text-align: left;
+    color: white;
+}
+.servicesScreenTitle{
+    padding-bottom: 25px;
+}
+.servicesScreenText{
+    padding-bottom: 35px;
+    font-size: 18px;
+}
+.servicesScreenPreTitle{
+    padding-bottom: 10px;
+    font-size: 22px;
+    text-align: left;
+}
+.servicesScreenTextList{
+    padding-bottom: 20px;
+    font-size: 20px;
+}

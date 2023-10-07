@@ -1,31 +1,32 @@
-.animatedButton {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
-    transition: transform 0.3s ease-in-out; /* Забезпечує плавну анімацію збільшення */
-}
-.animatedButton:hover {
-     transform: scale(1.1); /* При наведенні збільшуємо розмір кнопки */
- }
-.advantages_wrapp {
+.container {
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    padding: 40px 0;
-    gap: 14px;
+    flex-direction: column;
 }
-.advantages_item {
-    border: 1px solid black;
+.advantagesWrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.advantagesItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #fff;
     border-radius: 25px;
     height: 150px;
     padding: 25px;
-    width: calc(33.33333334% - 70px);
-    display: flex;
-    flex-wrap: wrap;
     transition: .5s;
+}
+.advantagesItem:hover{
+    background-color: darkgrey;
+    color: aliceblue;
+}
+.advantageText {
+    font-size: 18px;
+    cursor: pointer;
 }

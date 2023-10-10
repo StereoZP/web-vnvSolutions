@@ -1,42 +1,93 @@
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
-.about{
+
+.about {
     display: flex;
     justify-content: center;
     flex-direction: column;
     color: white;
-    text-align: left;
+    text-align: center;
 }
-.aboutHeader{
-    padding:30px 0 30px 0;
+
+.aboutHeader {
+    padding: 20px 0;
 }
-.aboutPreTitle{
+
+.aboutPreTitle {
     color: red;
-    font-size: 20px;
+    font-size: 16px;
 }
-.aboutTitle{
-    font-size: 30px;
-    margin-bottom: 50px;
-}
-.aboutProjectContainer{
-    display: flex;
-    justify-content: space-between;
+
+.aboutTitle {
+    font-size: 24px;
     margin-bottom: 30px;
 }
-.aboutProject{
-    font-size: 20px;
+
+.aboutProjectContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
-.aboutStatistic{
-    font-size: 24px;
+
+.aboutProject {
+    font-size: 18px;
+}
+
+.aboutStatistic {
+    font-size: 20px;
     font-weight: bold;
 }
-.aboutColor{
+
+.aboutColor {
     color: red;
 }
-.aboutPicture{
-    margin-right: 100px;
+
+.aboutPicture {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-bottom: 30px;
+    }
+
+    .about {
+        text-align: left;
+    }
+
+    .aboutHeader {
+        padding: 10px 0;
+    }
+
+    .aboutTitle {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        margin-bottom: 20px;
+    }
+
+    .aboutHeader {
+        padding: 5px 0;
+    }
+
+    .aboutTitle {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .aboutProject {
+        font-size: 16px;
+    }
+
+    .aboutStatistic {
+        font-size: 18px;
+    }
 }

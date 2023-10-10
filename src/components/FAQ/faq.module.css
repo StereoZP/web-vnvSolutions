@@ -1,3 +1,7 @@
+.container {
+    margin-bottom: 50px;
+    width: 90%;
+}
 
 .faqQuestion {
     background-color: white;
@@ -8,10 +12,8 @@
     border: 1px solid #ccc;
     border-radius: 20px;
     transition: background-color 0.3s ease;
-    width: 800px;
-}
-.faqQuestion:hover {
-    background-color: #e0e0e0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .faqAnswer {
@@ -19,10 +21,39 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 800px;
+    width: 100%;
     margin-bottom: 10px;
     font-style: italic;
 }
+
 .faqAnswer.active {
     display: block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-bottom: 30px;
+    }
+
+    .faqQuestion {
+        width: 90%;
+    }
+
+    .faqAnswer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        margin-bottom: 20px;
+    }
+
+    .faqQuestion {
+        width: 100%;
+    }
+
+    .faqAnswer {
+        width: 100%;
+    }
 }

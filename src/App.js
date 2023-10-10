@@ -7,6 +7,7 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import Brief from "./components/Brief/Brief";
 import FAQ from "./components/FAQ/FAQ";
 import SocialNetworks from "./components/SocialNetworks/SocialNetworks";
+import LeadMagnetOffer from "./components/LeadMagnetOffer/LeadMagnetOffer";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <ContactUs/>
             <Brief/>
             <FAQ/>
+            <LeadMagnetOffer/>
             <SocialNetworks/>
         </div>
     );

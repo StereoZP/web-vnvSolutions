@@ -2,12 +2,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
 }
-.parent{
+
+.parent {
     border-radius: 20px;
     overflow: hidden;
-    height: 80vh;
+    height: auto;
     border: 1px solid grey;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 5px;
+    }
 }

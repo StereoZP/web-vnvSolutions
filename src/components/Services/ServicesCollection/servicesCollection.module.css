@@ -1,29 +1,88 @@
-.servicesScreen{
+.servicesScreen {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px 0 50px 0;
+    margin: 30px 0;
 }
-.servicesScreenContent{
+
+.servicesScreenContent {
     display: flex;
     flex-direction: column;
-    padding: 25px;
-    text-align: left;
+    padding: 15px;
+    text-align: center;
     color: white;
 }
-.servicesScreenTitle{
-    padding-bottom: 25px;
+
+.servicesScreenTitle {
+    padding-bottom: 15px;
 }
-.servicesScreenText{
-    padding-bottom: 35px;
+
+.servicesScreenText {
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.servicesScreenPreTitle {
+    padding-bottom: 5px;
     font-size: 18px;
+    text-align: center;
 }
-.servicesScreenPreTitle{
-    padding-bottom: 10px;
-    font-size: 22px;
+
+.servicesScreenTextList {
+    padding-bottom: 15px;
+    font-size: 18px;
     text-align: left;
 }
-.servicesScreenTextList{
-    padding-bottom: 20px;
-    font-size: 20px;
+
+@media (max-width: 768px) {
+    .servicesScreen {
+        margin: 20px 0;
+    }
+
+    .servicesScreenContent {
+        text-align: left;
+    }
+
+    .servicesScreenTitle {
+        padding-bottom: 10px;
+    }
+
+    .servicesScreenText {
+        font-size: 14px;
+    }
+
+    .servicesScreenPreTitle {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .servicesScreenTextList {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .servicesScreen {
+        margin: 15px 0;
+    }
+
+    .servicesScreenContent {
+        padding: 10px;
+    }
+
+    .servicesScreenTitle {
+        padding-bottom: 5px;
+    }
+
+    .servicesScreenText {
+        font-size: 12px;
+    }
+
+    .servicesScreenPreTitle {
+        font-size: 14px;
+    }
+
+    .servicesScreenTextList {
+        font-size: 14px;
+    }
 }

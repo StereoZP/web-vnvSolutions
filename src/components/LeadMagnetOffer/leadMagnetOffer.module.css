@@ -1,0 +1,55 @@
+.leadMagnet {
+    border: 1px solid white;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 300px; /* Зменшуємо min-width для малих екранів */
+    margin-bottom: 50px; /* Зменшуємо margin для мобільних пристроїв */
+}
+
+/* Стилі для контенту блоку */
+.leadMagnetContent {
+    padding: 10px; /* Зменшуємо padding */
+}
+
+/* Стилі для заголовка */
+.leadMagnet h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Стилі для тексту */
+.leadMagnet p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .leadMagnet {
+        min-width: 250px; /* Зменшуємо min-width для планшетів */
+    }
+
+    .leadMagnet h2 {
+        font-size: 20px; /* Зменшуємо розмір шрифту для планшетів */
+    }
+
+    .leadMagnet p {
+        font-size: 14px; /* Зменшуємо розмір шрифту для планшетів */
+    }
+}
+
+/* Медіа-запит для телефонів */
+@media (max-width: 576px) {
+    .leadMagnet {
+        min-width: 100%; /* Повний ширина для мобільних пристроїв */
+    }
+
+    .leadMagnet h2 {
+        font-size: 18px; /* Зменшуємо розмір шрифту для мобільних пристроїв */
+    }
+
+    .leadMagnet p {
+        font-size: 12px; /* Зменшуємо розмір шрифту для мобільних пристроїв */
+    }
+}

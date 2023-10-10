@@ -44,7 +44,7 @@ const Advantages = () => {
                     </AnimatedBlock>
                 ))}
             </div>
-            <MyButton>Замовити</MyButton>
+            <MyButton>Order</MyButton>
         </div>
     );
 };

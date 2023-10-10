@@ -13,8 +13,8 @@ import classes from "./services.module.css";
 const Services = () => {
 
     const activeService = useSelector(state => state.service)
-    function getSelectedService(mode) {
-        const modes = {
+    function getSelectedService(service) {
+        const services = {
             'LANDING_PAGE': <LandingPage/>,
             'MULTI_PAGE_SITE': <MultiPageSite/>,
             'INTERNET_SHOP': <InternetShop/>,
@@ -22,7 +22,7 @@ const Services = () => {
             'INDIVIDUAL_CONSULTATION': <IndividualConsultation/>,
             'OTHER_SERVICES': <OtherServices/>,
         };
-        return modes[mode] ?? <LandingPage/>;
+        return services[service] ?? <LandingPage/>;
     }
 
     return (

@@ -1,0 +1,59 @@
+.container{
+    border-radius: 15px;
+    margin-bottom: 100px;
+    background-color: white;
+    width: 1200px;
+}
+.contactContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:30px 50px 30px 50px;
+}
+.contact{
+    text-align: left;
+    padding: 20px;
+    width: 200px;
+}
+.contactTitle{
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+.contactPreTitle{
+    font-size:18px ;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    width: 200px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.inputContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.field{
+    border: 1px solid black;
+    border-radius: 20px;
+    color: black;
+    font-size: 24px;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    width: 600px;
+    box-sizing: border-box;
+}
+.field:focus {
+    outline: none;
+    border-color: blue;
+}

@@ -1,13 +1,42 @@
 .container{
-    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
 }
 .about{
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     color: white;
+    text-align: left;
+}
+.aboutHeader{
+    padding:30px 0 30px 0;
+}
+.aboutPreTitle{
+    color: red;
+    font-size: 20px;
+}
+.aboutTitle{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.aboutProjectContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.aboutProject{
+    font-size: 20px;
+}
+.aboutStatistic{
+    font-size: 24px;
+    font-weight: bold;
+}
+.aboutColor{
+    color: red;
+}
+.aboutPicture{
+    margin-right: 100px;
 }

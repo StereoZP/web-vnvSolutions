@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 25px;
+    width: 1200px;
 }
 .parent{
     border-radius: 20px;

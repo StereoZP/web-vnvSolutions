@@ -1,0 +1,14 @@
+.container{
+    width: 1200px;
+    margin-bottom: 100px;
+}
+.brief{
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 0 20px 0;
+    width: 1200px;
+}
+.briefPreTitle{
+    padding: 20px 150px;
+}

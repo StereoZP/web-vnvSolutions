@@ -10,6 +10,21 @@
     min-width: 100px;
     align-items: center;
     font-size: 18px;
+    margin: 5px;
+}
+.myBtnActive{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease-in-out;
+    min-width: 100px;
+    align-items: center;
+    font-size: 18px;
+    margin: 5px;
 }
 .myBtn:hover {
     transform: scale(1.1);

@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from "./servicesCollection.module.css";
-import MyButton from "../../UI/button/MyButton";
+import CustomButton from "../../UI/CustomButton/CustomButton";
 
-const OtherServices = () => {
+export const OtherServices = () => {
     return (
         <div className={classes.servicesScreen}>
             <div className={classes.servicesScreenContent}>
@@ -15,7 +15,7 @@ const OtherServices = () => {
                     <li>You need a short portfolio of a specialist or a business card site</li>
                 </ul>
                 <div>
-                    <MyButton>More details</MyButton>
+                    <CustomButton>More details</CustomButton>
                 </div>
             </div>
             <div>
@@ -24,5 +24,3 @@ const OtherServices = () => {
         </div>
     );
 };
-
-export default OtherServices;

@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from "./contactUs.module.css";
-import MyButton from "../UI/button/MyButton";
-import {Field, Form, Formik} from "formik";
+import CustomButton from "../UI/CustomButton/CustomButton";
+import ContactUsForm from "./ContactUsForm";
 
 const ContactUs = () => {
     return (
@@ -14,7 +14,7 @@ const ContactUs = () => {
                 </div>
                 <div className={classes.buttonContainer}>
                     <div>
-                        <MyButton className={classes.button}>
+                        <CustomButton className={classes.button}>
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -24,18 +24,18 @@ const ContactUs = () => {
                                     d="M3.75 7.5L13.531 14.0208C14.8746 14.9165 16.625 14.9165 17.9686 14.0208L27.75 7.5"
                                     stroke="#242424" strokeWidth="1"></path>
                             </svg>
-                            Email</MyButton>
-                        <MyButton className={classes.button}>
+                            Email</CustomButton>
+                        <CustomButton className={classes.button}>
                             <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M28.584 6.5L4.58398 16.0278L10.4535 19.0741L22.9101 11.8148L13.6492 20.2407V27.5L16.8449 23.5463L24.2144 27.5L28.584 6.5Z"
                                     stroke="#242424" strokeWidth="1" strokeLinecap="round"></path>
                             </svg>
-                            Telegram</MyButton>
+                            Telegram</CustomButton>
                     </div>
                     <div>
-                        <MyButton className={classes.button}>
+                        <CustomButton className={classes.button}>
                             <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -45,58 +45,21 @@ const ContactUs = () => {
                                     d="M14.7014 12.669L11.7426 9.26172C10.2184 9.78591 7.78856 11.5944 10.2632 14.6347C13.3565 18.4351 14.3612 19.8672 19.9465 22.8908C21.157 23.546 22.9053 23.1529 24.2503 20.4009L20.7535 18.173C20.3948 17.9546 19.4893 17.9371 18.7361 19.0904C15.2932 18.1468 13.8945 15.6394 13.6255 14.5037C14.4862 13.9795 15.1049 13.1932 14.7014 12.669Z"
                                     stroke="#242424" strokeLinecap="round"></path>
                             </svg>
-                            WhatsUp</MyButton>
-                        <MyButton className={classes.button}>
+                            WhatsUp</CustomButton>
+                        <CustomButton className={classes.button}>
                             <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M17.1566 6.89961C19.2172 7.43542 23.201 9.27728 24.4099 14.0996M17.2115 9.3331C18.2647 9.4224 20.7008 10.4583 22.0196 13.8875M17.2115 11.4764C17.761 11.521 19.0249 12.039 19.6842 13.7536M9.79334 30.8996V27.4168C7.41219 26.9703 2.6499 23.8269 2.6499 14.8252C2.6499 3.5731 6.90849 2.09961 15.2883 2.09961C23.6681 2.09961 29.8499 2.09961 29.8499 12.414C29.8499 22.7284 28.3388 27.4168 19.8216 27.4168C13.0079 27.4168 13.2277 27.5996 13.2277 27.5996L9.79334 30.8996ZM10.8923 8.26147L13.9145 11.7443C14.3267 12.2801 13.6948 13.0838 12.8156 13.6196C13.0903 14.7805 14.519 17.3435 18.0358 18.308C18.8051 17.1292 19.73 17.1471 20.0964 17.3703L23.6681 19.6475C22.2943 22.4605 20.5085 22.8624 19.2721 22.1926C13.5671 19.1021 12.5408 17.6382 9.38122 13.7536C6.85354 10.6458 9.33542 8.79728 10.8923 8.26147Z"
                                     stroke="#242424" strokeLinecap="round"></path>
                             </svg>
-                            Viber</MyButton>
+                            Viber</CustomButton>
                     </div>
                 </div>
             </div>
             <div className={classes.inputContainer}>
                 <h2 style={{color:"black"}}>Feedback:</h2>
-                <Formik
-                    initialValues={{
-                        name:'Name',
-                        number:'+38068899898',
-                        email:'email@gmail.com',
-                        telegram:'telegram',
-                    }}
-                    onSubmit={()=>{console.log("submit")}}>
-                    {({handleChange})=>(
-                        <Form className={classes.inputContainer}>
-                            <Field
-                                className={classes.field}
-                                id="name"
-                                name="name"
-                                placeholder="Name"
-                                onChange={handleChange}/>
-                            <Field
-                                className={classes.field}
-                                id="number"
-                                name="number"
-                                placeholder="Number"
-                                onChange={handleChange}/>
-                            <Field
-                                className={classes.field}
-                                id="email"
-                                name="email"
-                                placeholder="Email"
-                                onChange={handleChange}/>
-                            <Field
-                                className={classes.field}
-                                id="telegram"
-                                name="telegram"
-                                placeholder="Telegram"
-                                onChange={handleChange}/>
-                            <MyButton type="submit">Submit</MyButton>
-                        </Form>
-                    )}
-                </Formik>
+                <ContactUsForm/>
             </div>
         </div>
     );

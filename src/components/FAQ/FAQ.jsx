@@ -25,19 +25,19 @@ const Faq = () => {
 
     const [activeIndex, setActiveIndex] = useState(null);
 
-    const toggleAnswer = (index) => {
-        if (index === activeIndex) {
-            setActiveIndex(null);
-        } else {
-            setActiveIndex(index);
-        }
+    const toggleAnswer = (selectedIndex) => {
+        const nextIndex = selectedIndex === activeIndex
+            ? null
+            : selectedIndex
+
+        setActiveIndex(nextIndex);
     };
 
     return (
         <div className={classes.container}>
             <h1>FAQ</h1>
             {faqData.map((item, index) => (
-                <div key={index}>
+                <div key={index} className={classes.faq}>
                     <div
                         className={classes.faqQuestion}
                         onClick={() => toggleAnswer(index)}

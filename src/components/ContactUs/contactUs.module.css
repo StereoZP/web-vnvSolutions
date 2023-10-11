@@ -1,8 +1,8 @@
 .container{
     border-radius: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     background-color: white;
-    width: 1200px;
+    width: 60%;
 }
 .contactContainer{
     display: flex;
@@ -57,11 +57,19 @@
     outline: none;
     border-color: blue;
 }
-
-@media (max-width: 768px) {
-    .container {
+@media (max-width: 1200px) {
+    /*.container {*/
+    /*    width: 90%;*/
+    /*}*/
+    .buttonContainer{
+        flex-direction: column;
+    }
+    .field {
         width: 90%;
     }
+}
+
+@media (max-width: 768px) {
     .field {
         width: 90%;
     }

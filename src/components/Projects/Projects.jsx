@@ -3,9 +3,9 @@ import classes from "./projects.module.css";
 
 const Projects = () => {
     return (
-        <div>
+        <div className={classes.container}>
             <h1 className={classes.aboutHeader}>Our projects</h1>
-            <div className={classes.container}>
+            <div className={classes.projectsBody}>
                 <div className={classes.aboutPicture}>
                     <img alt=""
                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Boris_Johnson_official_portrait_%28cropped%29.jpg/250px-Boris_Johnson_official_portrait_%28cropped%29.jpg"/>

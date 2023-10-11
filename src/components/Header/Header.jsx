@@ -1,13 +1,13 @@
 import React from 'react';
 import classes from "./header.module.css"
-import MyButton from "../UI/button/MyButton";
+import CustomButton from "../UI/CustomButton/CustomButton";
 
 const Header = () => {
     return (
         <div className={classes.container}>
             <div className={classes.header}>
                 <div>
-                    <h1 className={classes.headerTitle}>Easy, quality, IT -<br/>
+                    <h1>Easy, quality, IT -<br/>
                         <b>w</b>inning <b>solutions</b><br/>
                         for your business</h1>
                 </div>
@@ -16,8 +16,8 @@ const Header = () => {
                 </div>
             </div>
             <div className={classes.order}>
-                <p style={{fontStyle:"italic",paddingBottom:"10px", color:"white"}}>Tell me about your business and I'll take care of the rest...</p>
-                <MyButton>Order</MyButton>
+                <p className={classes.headerPreTitle}>Tell me about your business and I'll take care of the rest...</p>
+                <CustomButton>Order</CustomButton>
             </div>
         </div>
     );

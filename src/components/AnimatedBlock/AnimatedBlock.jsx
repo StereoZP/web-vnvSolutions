@@ -8,17 +8,14 @@ const AnimatedBlock = ({children}) => {
         const options = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.2, // Поріг вхідної видимості блоку
+            threshold: 0.2,
         };
 
         const callback = (entries, observer) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    // Виїзд блоку знизу
                     blockRef.current.style.transform = 'translateY(0)';
                     blockRef.current.style.opacity = '1';
-
-                    // При досягненні порогу видаляємо спостереження
                     observer.unobserve(entry.target);
                 }
             });
@@ -30,7 +27,6 @@ const AnimatedBlock = ({children}) => {
             observer.observe(blockRef.current);
         }
 
-        // Зупинка спостереження при розмонтовці компонента
         return () => {
             if (blockRef.current) {
                 observer.unobserve(blockRef.current);

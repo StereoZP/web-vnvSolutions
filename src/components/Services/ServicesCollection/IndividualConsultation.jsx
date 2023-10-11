@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from "./servicesCollection.module.css";
-import MyButton from "../../UI/button/MyButton";
+import CustomButton from "../../UI/CustomButton/CustomButton";
 
-const IndividualConsultation = () => {
+export const IndividualConsultation = () => {
     return (
         <div className={classes.servicesScreen}>
             <div className={classes.servicesScreenContent}>
@@ -13,7 +13,7 @@ const IndividualConsultation = () => {
                     <li>- You can indicate additional questions about your business and, upon prior agreement, I will include them in our consultation</li>
                 </ul>
                 <div>
-                    <MyButton>More details</MyButton>
+                    <CustomButton>More details</CustomButton>
                 </div>
             </div>
             <div>
@@ -22,5 +22,3 @@ const IndividualConsultation = () => {
         </div>
     );
 };
-
-export default IndividualConsultation;

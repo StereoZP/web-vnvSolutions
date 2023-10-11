@@ -27,15 +27,20 @@
     color: aliceblue;
 }
 .advantageText {
-    font-size: 18px;
     cursor: pointer;
+    overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+    .advantagesWrap {
+        grid-template-columns: repeat(2, 1fr);;
+    }
 }
 
 @media (max-width: 576px) {
     .advantagesWrap {
         grid-template-columns: 1fr;
     }
-
     .advantagesItem {
         height: auto;
         padding: 15px;

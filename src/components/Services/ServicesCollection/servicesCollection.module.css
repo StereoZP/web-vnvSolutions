@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     margin: 30px 0;
+    height: 100%;
 }
 
 .servicesScreenContent {
@@ -15,6 +16,7 @@
 
 .servicesScreenTitle {
     padding-bottom: 15px;
+    text-align: left;
 }
 
 .servicesScreenText {
@@ -37,6 +39,8 @@
 @media (max-width: 768px) {
     .servicesScreen {
         margin: 20px 0;
+        flex-direction: column;
+        height: 90%;
     }
 
     .servicesScreenContent {
@@ -64,6 +68,8 @@
 @media (max-width: 576px) {
     .servicesScreen {
         margin: 15px 0;
+        flex-direction: column;
+        height: 90%;
     }
 
     .servicesScreenContent {

@@ -1,10 +1,10 @@
 import React from 'react';
-import cl from "./socialNetworks.module.css"
+import classes from "./socialNetworks.module.css"
 
 const SocialNetworks = () => {
     return (
-        <div className={cl.container}>
-            <div className={cl.link}>
+        <div className={classes.container}>
+            <div className={classes.link}>
                 <a href="https://vnv.solutions/">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="white"
                          xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +17,7 @@ const SocialNetworks = () => {
                     </svg>
                 </a>
             </div>
-            <div className={cl.link}>
+            <div className={classes.link}>
                 <a href="https://vnv.solutions/">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="white"
                          xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +27,7 @@ const SocialNetworks = () => {
                     </svg>
                 </a>
             </div>
-            <div className={cl.link}>
+            <div className={classes.link}>
                 <a href="https://vnv.solutions/">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="white"
                          xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +40,7 @@ const SocialNetworks = () => {
                     </svg>
                 </a>
             </div>
-            <div className={cl.link}>
+            <div className={classes.link}>
                 <a href="https://vnv.solutions/">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="white"
                          xmlns="http://www.w3.org/2000/svg">

@@ -5,6 +5,7 @@
     align-items: center;
     height: 100vh;
 }
+
 .header {
     display: flex;
     align-items: center;
@@ -12,6 +13,12 @@
     text-align: center;
     padding: 100px;
 }
+
+.headerPreTitle {
+    padding-bottom: 10px;
+    color: white;
+}
+
 .order {
     display: flex;
     flex-direction: column;
@@ -42,25 +49,17 @@
         flex-direction: column;
         padding: 50px;
     }
-    img{
-        width: 300px;
-    }
+
     .button {
         padding: 8px 16px;
     }
 }
 
-/* Медіа-запит для телефонів */
 @media (max-width: 576px) {
     .container {
         padding: 30px;
     }
-    h1{
-        font-size: 38px;
-    }
-    img{
-        width: 200px;
-    }
+
     .button {
         padding: 6px 12px;
     }

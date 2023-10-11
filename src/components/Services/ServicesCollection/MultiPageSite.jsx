@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from "./servicesCollection.module.css";
-import MyButton from "../../UI/button/MyButton";
+import CustomButton from "../../UI/CustomButton/CustomButton";
 
-const MultiPageSite = () => {
+export const MultiPageSite = () => {
     return (
         <div className={classes.servicesScreen}>
             <div className={classes.servicesScreenContent}>
@@ -15,7 +15,7 @@ const MultiPageSite = () => {
                     <li>- Any other additional functionality is provided on the site</li>
                 </ul>
                 <div>
-                    <MyButton>More details</MyButton>
+                    <CustomButton>More details</CustomButton>
                 </div>
             </div>
             <div>
@@ -24,5 +24,3 @@ const MultiPageSite = () => {
         </div>
     );
 };
-
-export default MultiPageSite;

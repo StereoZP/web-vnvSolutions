@@ -1,35 +1,41 @@
 import React from 'react';
 import ServicesList from "./ServicesList/ServicesList";
-import LandingPage from "./ServicesCollection/LandingPage";
-import MultiPageSite from "./ServicesCollection/MultiPageSite";
-import InternetShop from "./ServicesCollection/InternetShop";
-import SiteAudit from "./ServicesCollection/SiteAudit";
-import IndividualConsultation from "./ServicesCollection/IndividualConsultation";
-import OtherServices from "./ServicesCollection/OtherServices";
+import {
+    LandingPage,
+    MultiPageSite,
+    InternetShop,
+    SiteAudit,
+    IndividualConsultation,
+    OtherServices
+} from "./index";
+
 import {useSelector} from "react-redux";
 import classes from "./services.module.css";
+import {SERVICES} from "../../constant";
 
 
 const Services = () => {
 
     const activeService = useSelector(state => state.service)
+
+    const SERVICE_MAP = {
+        [SERVICES.LANDING_PAGE]: <LandingPage/>,
+        [SERVICES.MULTI_PAGE_SITE]: <MultiPageSite/>,
+        [SERVICES.INTERNET_SHOP]: <InternetShop/>,
+        [SERVICES.SITE_AUDIT]: <SiteAudit/>,
+        [SERVICES.INDIVIDUAL_CONSULTATION]: <IndividualConsultation/>,
+        [SERVICES.OTHER_SERVICES]: <OtherServices/>,
+    }
+
     function getSelectedService(service) {
-        const services = {
-            'LANDING_PAGE': <LandingPage/>,
-            'MULTI_PAGE_SITE': <MultiPageSite/>,
-            'INTERNET_SHOP': <InternetShop/>,
-            'SITE_AUDIT': <SiteAudit/>,
-            'INDIVIDUAL_CONSULTATION': <IndividualConsultation/>,
-            'OTHER_SERVICES': <OtherServices/>,
-        };
-        return services[service] ?? <LandingPage/>;
+        return SERVICE_MAP[service] ?? <LandingPage/>;
     }
 
     return (
         <div className={classes.container}>
             <div className={classes.parent}>
                 <ServicesList/>
-                    {getSelectedService(activeService)}
+                {getSelectedService(activeService)}
             </div>
         </div>
     );

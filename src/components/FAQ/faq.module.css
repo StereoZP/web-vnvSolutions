@@ -3,6 +3,13 @@
     width: 90%;
 }
 
+.faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .faqQuestion {
     background-color: white;
     padding: 10px;
@@ -21,7 +28,6 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%;
     margin-bottom: 10px;
     font-style: italic;
 }
@@ -34,26 +40,10 @@
     .container {
         margin-bottom: 30px;
     }
-
-    .faqQuestion {
-        width: 90%;
-    }
-
-    .faqAnswer {
-        width: 90%;
-    }
 }
 
 @media (max-width: 576px) {
     .container {
         margin-bottom: 20px;
-    }
-
-    .faqQuestion {
-        width: 100%;
-    }
-
-    .faqAnswer {
-        width: 100%;
     }
 }

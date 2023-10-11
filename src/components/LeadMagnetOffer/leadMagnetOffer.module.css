@@ -1,25 +1,26 @@
 .leadMagnet {
-    border: 1px solid white;
+    border: transparent;
     color: white;
-    padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
-    min-width: 300px; /* Зменшуємо min-width для малих екранів */
-    margin-bottom: 50px; /* Зменшуємо margin для мобільних пристроїв */
+    width: 90%;
+    margin-bottom: 30px;
 }
-
-/* Стилі для контенту блоку */
+.leadMagnetPreTitle{
+    text-align: center;
+}
 .leadMagnetContent {
-    padding: 10px; /* Зменшуємо padding */
+    padding: 10px;
+    border-radius: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,9,0.9640231092436975) 49%, rgba(0,212,255,1) 100%);
 }
 
-/* Стилі для заголовка */
 .leadMagnet h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-/* Стилі для тексту */
 .leadMagnet p {
     font-size: 16px;
     margin-bottom: 20px;
@@ -27,29 +28,28 @@
 
 @media (max-width: 768px) {
     .leadMagnet {
-        min-width: 250px; /* Зменшуємо min-width для планшетів */
+        width: 90%;
     }
 
     .leadMagnet h2 {
-        font-size: 20px; /* Зменшуємо розмір шрифту для планшетів */
+        font-size: 20px;
     }
 
     .leadMagnet p {
-        font-size: 14px; /* Зменшуємо розмір шрифту для планшетів */
+        font-size: 14px;
     }
 }
 
-/* Медіа-запит для телефонів */
 @media (max-width: 576px) {
     .leadMagnet {
-        min-width: 100%; /* Повний ширина для мобільних пристроїв */
+        width: 90%;
     }
 
     .leadMagnet h2 {
-        font-size: 18px; /* Зменшуємо розмір шрифту для мобільних пристроїв */
+        font-size: 18px;
     }
 
     .leadMagnet p {
-        font-size: 12px; /* Зменшуємо розмір шрифту для мобільних пристроїв */
+        font-size: 12px;
     }
 }

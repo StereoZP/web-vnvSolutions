@@ -1,5 +1,5 @@
 import React from 'react';
-import MyButton from "../UI/button/MyButton";
+import CustomButton from "../UI/CustomButton/CustomButton";
 import classes from "./brief.module.css";
 
 const Brief = () => {
@@ -11,7 +11,7 @@ const Brief = () => {
                     specifies the upcoming stages of the work and explains possible technical nuances in order to
                     quickly create a common context that is understandable to all parties, to be on the same page in the
                     project.</p>
-                <MyButton>Fill now</MyButton>
+                <CustomButton>Fill now</CustomButton>
             </div>
         </div>
     );

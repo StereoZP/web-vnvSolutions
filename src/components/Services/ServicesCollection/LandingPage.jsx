@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from "./servicesCollection.module.css";
-import MyButton from "../../UI/button/MyButton";
+import CustomButton from "../../UI/CustomButton/CustomButton";
 
-const LandingPage = () => {
+export const LandingPage = () => {
     return (
         <div className={classes.servicesScreen}>
             <div className={classes.servicesScreenContent}>
@@ -15,7 +15,7 @@ const LandingPage = () => {
                     <li>- You need a short portfolio of a specialist or a business card site</li>
                 </ul>
                 <div>
-                    <MyButton>More details</MyButton>
+                    <CustomButton>More details</CustomButton>
                 </div>
             </div>
             <div>
@@ -24,5 +24,3 @@ const LandingPage = () => {
         </div>
     );
 };
-
-export default LandingPage;
